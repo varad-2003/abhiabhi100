@@ -293,15 +293,15 @@ export default function LearningScreen() {
   });
 
   const handleVideoPress = (video) => {
-    Alert.alert(
-      'Open Video',
-      `Would you like to watch "${video.title}"?`,
-      [
-        { text: 'Cancel', style: 'cancel' },
-        { text: 'Watch on YouTube', onPress: () => console.log('Opening YouTube:', video.id) }
-      ]
-    );
-  };
+  Alert.alert(
+    'Open Video',
+    `Would you like to watch "${video.title}"?`,
+    [
+      { text: 'Cancel', style: 'cancel' },
+      { text: 'Watch on YouTube', onPress: () => console.log('Opening YouTube:', video.id) }
+    ]
+  );
+};
 
   return (
     <View style={{

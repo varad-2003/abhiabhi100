@@ -26,9 +26,9 @@ export default function SplashScreen() {
       }),
     ]).start();
 
-    // Navigate to home after 2.5 seconds
+    // Navigate to signup after 2.5 seconds
     const timer = setTimeout(() => {
-      router.replace('/home');
+      router.replace('/signup');
     }, 2500);
 
     return () => clearTimeout(timer);
